@@ -1,0 +1,17 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     mksyntax
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x1000033D8, symSize: 0x408 }
+  - { offsetInCU: 0x4D, offset: 0x4D, size: 0x8, addend: 0x0, symName: _wordflags, symObjAddr: 0xB18, symBinAddr: 0x100008000, symSize: 0x0 }
+  - { offsetInCU: 0x9B, offset: 0x9B, size: 0x8, addend: 0x0, symName: _preamble, symObjAddr: 0xC08, symBinAddr: 0x1000080F0, symSize: 0x0 }
+  - { offsetInCU: 0xBC, offset: 0xBC, size: 0x8, addend: 0x0, symName: _includes, symObjAddr: 0xC47, symBinAddr: 0x10000812F, symSize: 0x0 }
+  - { offsetInCU: 0xDD, offset: 0xDD, size: 0x8, addend: 0x0, symName: _lsyntax, symBinAddr: 0x100008184, symSize: 0x0 }
+  - { offsetInCU: 0xFF, offset: 0xFF, size: 0x8, addend: 0x0, symName: _debug, symBinAddr: 0x100008180, symSize: 0x0 }
+  - { offsetInCU: 0x114, offset: 0x114, size: 0x8, addend: 0x0, symName: _progname, symBinAddr: 0x100008588, symSize: 0x0 }
+  - { offsetInCU: 0x11D, offset: 0x11D, size: 0x8, addend: 0x0, symName: _cdesc, symObjAddr: 0x83C, symBinAddr: 0x100003C14, symSize: 0x16C }
+  - { offsetInCU: 0x142, offset: 0x142, size: 0x8, addend: 0x0, symName: _cdesc.xbuf, symObjAddr: 0x355C, symBinAddr: 0x10000816B, symSize: 0x0 }
+  - { offsetInCU: 0x492, offset: 0x492, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x1000033D8, symSize: 0x408 }
+  - { offsetInCU: 0x8A6, offset: 0x8A6, size: 0x8, addend: 0x0, symName: _addcstr, symObjAddr: 0x408, symBinAddr: 0x1000037E0, symSize: 0x230 }
+  - { offsetInCU: 0x93A, offset: 0x93A, size: 0x8, addend: 0x0, symName: _addcchar, symObjAddr: 0x638, symBinAddr: 0x100003A10, symSize: 0x204 }
+...

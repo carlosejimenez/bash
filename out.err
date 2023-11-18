@@ -1,0 +1,331 @@
+In file included from ./parse.y:63:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/readline/readline.h:40:15: error: typedef redefinition with different types ('int (const char *, int)' vs 'int ()')
+typedef int       Function(const char *, int);
+                  ^
+./general.h:196:13: note: previous definition is here
+typedef int Function ();
+            ^
+In file included from ./parse.y:63:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/readline/readline.h:41:16: error: typedef redefinition with different types ('void (void)' vs 'void ()')
+typedef void      VFunction(void);
+                  ^
+./general.h:197:14: note: previous definition is here
+typedef void VFunction ();
+             ^
+In file included from ./parse.y:63:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/readline/readline.h:43:16: error: typedef redefinition with different types ('char *(const char *, int)' vs 'char *()')
+typedef char     *CPFunction(const char *, int);
+                  ^
+./general.h:198:15: note: previous definition is here
+typedef char *CPFunction ();            /* no longer used */
+              ^
+In file included from ./parse.y:63:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/readline/readline.h:44:16: error: typedef redefinition with different types ('char **(const char *, int, int)' vs 'char **()')
+typedef char    **CPPFunction(const char *, int, int);
+                  ^
+./general.h:199:16: note: previous definition is here
+typedef char **CPPFunction ();          /* no longer used */
+               ^
+./parse.y:822:68: warning: passing arguments to 'list_reverse' without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+                          (yyval.command) = make_for_command ((yyvsp[(2) - (10)].word), REVERSE_LIST ((yyvsp[(5) - (10)].word_list), WORD_LIST *), (yyvsp[(9) - (10)].command), word_lineno[word_top]);
+                                                                                        ^
+./general.h:148:46: note: expanded from macro 'REVERSE_LIST'
+  ((list && list->next) ? (type)list_reverse ((GENERIC_LIST *)list) \
+                                             ^
+./parse.y:827:68: warning: passing arguments to 'list_reverse' without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+                          (yyval.command) = make_for_command ((yyvsp[(2) - (10)].word), REVERSE_LIST ((yyvsp[(5) - (10)].word_list), WORD_LIST *), (yyvsp[(9) - (10)].command), word_lineno[word_top]);
+                                                                                        ^
+./general.h:148:46: note: expanded from macro 'REVERSE_LIST'
+  ((list && list->next) ? (type)list_reverse ((GENERIC_LIST *)list) \
+                                             ^
+./parse.y:890:71: warning: passing arguments to 'list_reverse' without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+                          (yyval.command) = make_select_command ((yyvsp[(2) - (10)].word), REVERSE_LIST ((yyvsp[(5) - (10)].word_list), WORD_LIST *), (yyvsp[(9) - (10)].command), word_lineno[word_top]);
+                                                                                           ^
+./general.h:148:46: note: expanded from macro 'REVERSE_LIST'
+  ((list && list->next) ? (type)list_reverse ((GENERIC_LIST *)list) \
+                                             ^
+./parse.y:895:71: warning: passing arguments to 'list_reverse' without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+                          (yyval.command) = make_select_command ((yyvsp[(2) - (10)].word), REVERSE_LIST ((yyvsp[(5) - (10)].word_list), WORD_LIST *), (yyvsp[(9) - (10)].command), word_lineno[word_top]);
+                                                                                           ^
+./general.h:148:46: note: expanded from macro 'REVERSE_LIST'
+  ((list && list->next) ? (type)list_reverse ((GENERIC_LIST *)list) \
+                                             ^
+./parse.y:1391:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+init_yy_io (get, unget, type, name, location)
+^
+./parse.y:1428:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+yy_ungetc (c)
+^
+./parse.y:1528:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+yy_readline_unget (c)
+^
+./parse.y:1594:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+yy_string_unget (c)
+^
+./parse.y:1602:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+with_input_from_string (string, name)
+^
+./parse.y:1667:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+yy_stream_unget (c)
+^
+./parse.y:1674:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+with_input_from_stream (stream, name)
+^
+./parse.y:1707:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+push_stream (reset_lineno)
+^
+./parse.y:1780:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+stream_on_stack (type)
+^
+./parse.y:1806:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+restore_token_state (ts)
+^
+./parse.y:1867:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+push_string (s, expand, ap)
+^
+./parse.y:2000:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+clear_string_list_expander (ap)
+^
+./parse.y:2025:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+read_a_line (remove_quoted_newline)
+^
+./parse.y:2121:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+read_secondary_line (remove_quoted_newline)
+^
+./parse.y:2277:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+shell_getc (remove_quoted_newline)
+^
+./parse.y:2445:6: error: use of undeclared identifier 'history_quoting_state'
+            history_quoting_state = '\'';
+            ^
+./parse.y:2447:6: error: use of undeclared identifier 'history_quoting_state'
+            history_quoting_state = '"';
+            ^
+./parse.y:2449:6: error: use of undeclared identifier 'history_quoting_state'
+            history_quoting_state = 0;
+            ^
+./parse.y:2455:4: error: use of undeclared identifier 'history_quoting_state'
+          history_quoting_state = 0;
+          ^
+./parse.y:2681:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+shell_ungetc (c)
+^
+./parse.y:2713:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+discard_until (character)
+^
+./parse.y:2726:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+execute_variable_command (command, vname)
+^
+./parse.y:2748:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+push_token (x)
+^
+./parse.y:2819:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+push_heredoc (r)
+^
+./parse.y:2929:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+mk_alexpansion (s)
+^
+./parse.y:2952:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+alias_expand_token (tokstr)
+^
+./parse.y:3069:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+special_case_tokens (tokstr)
+^
+./parse.y:3241:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+read_token (command)
+^
+./parse.y:3545:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+parse_matched_pair (qc, open, close, lenp, flags)
+^
+./parse.y:3903:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+parse_comsub (qc, open, close, lenp, flags)
+^
+./parse.y:4449:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+xparse_dolparen (base, string, indp, flags)
+^
+./parse.y:4580:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+parse_dparen (c)
+^
+./parse.y:4640:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+parse_arith_cmd (ep, adddq)
+^
+./parse.y:4699:17: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+      if (etext = error_token_from_token (cond_token))
+          ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./parse.y:4699:17: note: place parentheses around the assignment to silence this warning
+      if (etext = error_token_from_token (cond_token))
+                ^
+          (                                          )
+./parse.y:4699:17: note: use '==' to turn this assignment into an equality comparison
+      if (etext = error_token_from_token (cond_token))
+                ^
+                ==
+./parse.y:4781:14: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+          if (etext = error_token_from_token (cond_token))
+              ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./parse.y:4781:14: note: place parentheses around the assignment to silence this warning
+          if (etext = error_token_from_token (cond_token))
+                    ^
+              (                                          )
+./parse.y:4781:14: note: use '==' to turn this assignment into an equality comparison
+          if (etext = error_token_from_token (cond_token))
+                    ^
+                    ==
+./parse.y:4813:14: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+          if (etext = error_token_from_token (tok))
+              ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./parse.y:4813:14: note: place parentheses around the assignment to silence this warning
+          if (etext = error_token_from_token (tok))
+                    ^
+              (                                   )
+./parse.y:4813:14: note: use '==' to turn this assignment into an equality comparison
+          if (etext = error_token_from_token (tok))
+                    ^
+                    ==
+./parse.y:4863:14: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+          if (etext = error_token_from_token (tok))
+              ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./parse.y:4863:14: note: place parentheses around the assignment to silence this warning
+          if (etext = error_token_from_token (tok))
+                    ^
+              (                                   )
+./parse.y:4863:14: note: use '==' to turn this assignment into an equality comparison
+          if (etext = error_token_from_token (tok))
+                    ^
+                    ==
+./parse.y:4889:14: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+          if (etext = error_token_from_token (tok))
+              ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./parse.y:4889:14: note: place parentheses around the assignment to silence this warning
+          if (etext = error_token_from_token (tok))
+                    ^
+              (                                   )
+./parse.y:4889:14: note: use '==' to turn this assignment into an equality comparison
+          if (etext = error_token_from_token (tok))
+                    ^
+                    ==
+./parse.y:4907:22: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+      else if (etext = error_token_from_token (tok))
+               ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./parse.y:4907:22: note: place parentheses around the assignment to silence this warning
+      else if (etext = error_token_from_token (tok))
+                     ^
+               (                                   )
+./parse.y:4907:22: note: use '==' to turn this assignment into an equality comparison
+      else if (etext = error_token_from_token (tok))
+                     ^
+                     ==
+./parse.y:4939:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+token_is_assignment (t, i)
+^
+./parse.y:4962:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+token_is_ident (t, i)
+^
+./parse.y:4978:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+read_token_word (character)
+^
+./parse.y:5462:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+reserved_word_acceptable (toksym)
+^
+./parse.y:5512:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+find_reserved_word (tokstr)
+^
+./parse.y:5576:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+history_delimiting_chars (line)
+^
+./parse.y:5715:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+set_current_prompt_level (x)
+^
+./parse.y:5734:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+prompt_history_number (pmt)
+^
+./parse.y:5787:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+decode_prompt_string (string)
+^
+./parse.y:5809:12: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+  while (c = *string++)
+         ~~^~~~~~~~~~~
+./parse.y:5809:12: note: place parentheses around the assignment to silence this warning
+  while (c = *string++)
+           ^
+         (            )
+./parse.y:5809:12: note: use '==' to turn this assignment into an equality comparison
+  while (c = *string++)
+           ^
+           ==
+./parse.y:6200:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+yyerror (msg)
+^
+./parse.y:6209:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+error_token_from_token (tok)
+^
+./parse.y:6214:9: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+  if (t = find_token_in_alist (tok, word_token_alist, 0))
+      ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./parse.y:6214:9: note: place parentheses around the assignment to silence this warning
+  if (t = find_token_in_alist (tok, word_token_alist, 0))
+        ^
+      (                                                 )
+./parse.y:6214:9: note: use '==' to turn this assignment into an equality comparison
+  if (t = find_token_in_alist (tok, word_token_alist, 0))
+        ^
+        ==
+./parse.y:6217:9: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+  if (t = find_token_in_alist (tok, other_token_alist, 0))
+      ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./parse.y:6217:9: note: place parentheses around the assignment to silence this warning
+  if (t = find_token_in_alist (tok, other_token_alist, 0))
+        ^
+      (                                                  )
+./parse.y:6217:9: note: use '==' to turn this assignment into an equality comparison
+  if (t = find_token_in_alist (tok, other_token_alist, 0))
+        ^
+        ==
+./parse.y:6310:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+report_syntax_error (message)
+^
+./parse.y:6384:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+discard_parser_constructs (error_p)
+^
+./parse.y:6468:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+parse_string_to_word_list (s, flags, whom)
+^
+./parse.y:6496:10: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+  if (ea = expanding_alias ())
+      ~~~^~~~~~~~~~~~~~~~~~~~
+./parse.y:6496:10: note: place parentheses around the assignment to silence this warning
+  if (ea = expanding_alias ())
+         ^
+      (                      )
+./parse.y:6496:10: note: use '==' to turn this assignment into an equality comparison
+  if (ea = expanding_alias ())
+         ^
+         ==
+./parse.y:6560:11: warning: passing arguments to 'list_reverse' without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+  return (REVERSE_LIST (wl, WORD_LIST *));
+          ^
+./general.h:148:46: note: expanded from macro 'REVERSE_LIST'
+  ((list && list->next) ? (type)list_reverse ((GENERIC_LIST *)list) \
+                                             ^
+./parse.y:6564:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+parse_compound_assignment (retlenp)
+^
+./parse.y:6629:12: warning: passing arguments to 'list_reverse' without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+      rl = REVERSE_LIST (wl, WORD_LIST *);
+           ^
+./general.h:148:46: note: expanded from macro 'REVERSE_LIST'
+  ((list && list->next) ? (type)list_reverse ((GENERIC_LIST *)list) \
+                                             ^
+./parse.y:6652:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+save_parser_state (ps)
+^
+./parse.y:6705:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+restore_parser_state (ps)
+^
+./parse.y:6763:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+save_input_line_state (ls)
+^
+./parse.y:6794:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+restore_input_line_state (ls)
+^
+64 warnings and 8 errors generated.
